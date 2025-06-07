@@ -1,0 +1,20 @@
+.cardList {
+  margin: 50px auto 0 auto;
+}
+
+.addReport {
+  margin: 0 auto;
+}
+
+.modalMain {
+  display: none;
+  &.active {
+    display: block;
+  }
+}
+
+@media (max-width: 620px) {
+  .cardList {
+    margin: 50px 10px 0 10px;
+  }
+}

@@ -1,0 +1,17 @@
+.appMenu {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: -100%;
+  transition: 0.5s all ease;
+  &.active {
+    display: block;
+    left: 0;
+  }
+}
+
+.appHeader {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}

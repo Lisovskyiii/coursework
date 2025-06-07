@@ -1,0 +1,36 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 200px;
+  width: 200px;
+  cursor: pointer;
+}
+
+.title {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+@media (max-width: 1032px) {
+  .title {
+    margin-top: 22px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 808px) {
+  main {
+    max-width: 580px;
+  }
+}
+
+@media (max-width: 626px) {
+  main {
+    max-width: 100%;
+    padding-bottom: 70px;
+  }
+}

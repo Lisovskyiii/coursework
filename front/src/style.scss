@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import 'libs/bootstrap-reboot.min.scss';
+
+:root {
+  --main-color: rgba(14, 24, 255);
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', 'Roboto', sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+main {
+  margin: 0px auto 0px auto;
+  padding: 120px 0px 50px 0px;
+  width: 1180px;
+}
+
+@media (max-width: 1240px) {
+  main {
+    max-width: 1000px;
+  }
+}
+
+@media (max-width: 1032px) {
+  main {
+    max-width: 760px;
+  }
+}
+
+@media (max-width: 808px) {
+  main {
+    max-width: 580px;
+  }
+}
+
+@media (max-width: 626px) {
+  main {
+    max-width: 100%;
+    padding-top: 130px;
+  }
+}

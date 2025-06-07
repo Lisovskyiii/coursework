@@ -1,0 +1,95 @@
+@mixin icon_link($url) {
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url($url) center center/cover no-repeat;
+    transform: translateY(10%);
+  }
+}
+
+.menu {
+  height: 100vh;
+  padding-top: 220px;
+  padding-left: 100px;
+  position: relative;
+  width: 345px;
+  background-color: #454bff;
+}
+
+.list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.close {
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  cursor: pointer;
+}
+
+.link {
+  position: relative;
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 40px;
+  & a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.4s;
+    &:hover {
+      color: #000000;
+    }
+  }
+  &.help {
+    @include icon_link('../../assets/icons/help.svg');
+  }
+  &.settings {
+    @include icon_link('../../assets/icons/settings.svg');
+  }
+  &.exit {
+    @include icon_link('../../assets/icons/exit.svg');
+  }
+}
+
+@media (max-width: 1032px) {
+  .link {
+    font-size: 22px;
+    &.help,
+    &.settings,
+    &.exit {
+      &::before {
+        transform: translateY(0%);
+        left: -45px;
+      }
+    }
+  }
+}
+
+@media (max-width: 626px) {
+  .menu {
+    width: 80%;
+    padding-left: 0;
+  }
+  .list {
+    margin: 0 auto;
+    width: 40%;
+  }
+  .link {
+    font-size: 20px;
+    &.help,
+    &.settings,
+    &.exit {
+      &::before {
+        transform: translateY(0%);
+        left: -45px;
+      }
+    }
+  }
+}

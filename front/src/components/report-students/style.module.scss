@@ -1,0 +1,41 @@
+.image {
+  object-fit: cover;
+  width: 600px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.li {
+  display: flex;
+  margin-top: 5px;
+  justify-content: space-between;
+  &.false {
+    color: #de0f0f;
+  }
+}
+
+@media (max-width: 808px) {
+  .image {
+    width: 500px;
+  }
+  .ul {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 626px) {
+  .image {
+    width: 90%;
+  }
+  .name {
+    margin-right: 20px;
+  }
+}

@@ -1,0 +1,20 @@
+# Игнорирование всей директории node_modules
+node_modules/
+
+# Игнорирование билд директории
+build/
+dist/
+
+# Игнорирование специфичных файлов
+.eslintrc.js
+
+package.json
+package-lock.json
+README.md
+.gitgnore
+.env.local
+public
+.firebase
+custom.d.ts
+tsconfig.json
+.prettierrc
